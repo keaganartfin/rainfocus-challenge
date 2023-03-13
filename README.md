@@ -21,4 +21,3 @@ Open up your system console or the IDE integrated console and navigate to the fo
   * When the profile button (bottom left) is clicked will change the theme of the page to a Dark Theme coded from the ground up.
 * **Add Registration Workflow**
   * Step 2 : Build Registration Workflows contains a *Add Registration Workflow* box that, when clicked, transforms into a form that a user can input information and create a new registration box. 
-  * Currently input is limited as to not cut-off the text inside.
