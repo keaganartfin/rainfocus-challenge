@@ -3,28 +3,34 @@
   --DarkGray: #222222;
   --Gray: #777777;
   --LightGray: #444444;
-  --White: #FFFFFF;
-  --AlmostWhite: #CCCCCC;
-  --SoCloseToWhite: #BBBBBB;
-  --Purple: #5C00DC;
-  --HighlightPurple: #5C00DC14;
+  --White: #ffffff;
+  --AlmostWhite: #cccccc;
+  --SoCloseToWhite: #bbbbbb;
+  --Purple: #5c00dc;
+  --HighlightPurple: #5c00dc14;
   --SearchBar: #f5f5f5;
-  --DivBackground: #FFFFFF;
-  --NavBackground: #FFFFFF;
-} 
+  --DivBackground: #ffffff;
+  --NavBackground: #ffffff;
+  --IconColor: #777777;
+  --ActiveIconColor: #5c00dc;
+  --ContentIconColor: #5c00dc;
+}
 .darkTheme {
   --Black: #b4c6ef;
   --DarkGray: #3abff8;
   --Gray: #b4c6ef;
-  --LightGray: #38BDF8;
+  --LightGray: #38bdf8;
   --White: #0f172a;
   --AlmostWhite: #1e293b;
-  --SoCloseToWhite: #0CA5E9;
-  --Purple: #38BDF8;
-  --HighlightPurple: #0CA5E914;
+  --SoCloseToWhite: #0ca5e9;
+  --Purple: #38bdf8;
+  --HighlightPurple: #0ca5e914;
   --SearchBar: #1d283a;
   --DivBackground: #1e293b;
   --NavBackground: #0e1526;
+  --IconColor: #1e293b;
+  --ActiveIconColor: #0ca5e9;
+  --ContentIconColor: #818CF8;
 }
 * {
   box-sizing: border-box;
@@ -37,3 +43,7 @@ body {
   background-color: var(--White);
   color: var(--Black);
 }
+a {
+  text-decoration: none;
+}
+

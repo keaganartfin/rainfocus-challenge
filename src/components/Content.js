@@ -127,7 +127,7 @@ const Content = () => {
               {workFlowBoxes.map((box, index) => (
                 <div key={index} className="stepBoxes">
                   <div>
-                    <ArrowRight />
+                    <ArrowRight className="listIcon" />
                     <span className="stepsSubTitle">{box.title}</span>
                   </div>
                   <span className="stepsSubTitleSub">{box.description}</span>
@@ -160,7 +160,7 @@ const Content = () => {
                 </div>
               ) : (
                 <div className="addBoxes" onClick={handleFormBox}>
-                  <AddButton />
+                  <AddButton className="listIcon" />
                   <span className="stepsSubTitleSub center">
                     Add Registration Workflow
                   </span>
@@ -176,7 +176,7 @@ const Content = () => {
             <div className="boxStructure">
               <div className="stepBoxes">
                 <div>
-                  <PortalIcon />
+                  <PortalIcon className="listIcon" />
                   <span className="stepsSubTitle">Attendee Portal</span>
                 </div>
                 <span className="stepsSubTitleSub">

@@ -1,25 +1,27 @@
-a {
-  text-decoration: none;
-}
-.navbar {
+/* Start Sidebar Wrapper */
+
+.sidebar {
+  height: 100vh;
   position: fixed;
   top: 0;
-  background-color: var(--White);
-  max-width: 274px;
-  height: 100vh;
+  display: flex;
 }
+
+/* End Sidebar Wrapper */
+
+/* Start Left Sidebar */
+
 .leftNavbarContainer {
+  height: 100%;
   border-right: 1px solid var(--AlmostWhite);
+  background: var(--White);
   padding: 12px 7.5px;
+  z-index: 10;
 }
 .rightNavbarContainer {
-  padding: 12px 7px 0 8px;
-}
-.sidebar {
   height: 100%;
-  width: 100%;
-  display: flex;
-  background: var(--NavBackground);
+  padding: 12px 7px 0 8px;
+  z-index: 9;
 }
 .iconMenu {
   display: flex;
@@ -55,25 +57,36 @@ a {
   font-size: 16px;
   color: var(--White);
 }
+
+/* Start Left Sidebar */
+
+/* Start Right Sidebar */
+
 .navbarMenu {
   display: flex;
   flex-direction: column;
   height: 100%;
   border-right: 1px solid var(--AlmostWhite);
 }
+
+/* Start Sidebar Header */
+
 .navbarMenu > h3 {
   font-size: 14px;
   font-weight: 600;
   line-height: 18.2px;
-  padding: 8px 8px 12px 8px;
+  padding: 8px 9px 12px 8px;
   margin: 0;
 }
 .navbarMenu > p {
   font-size: 10px;
   font-weight: 500;
   line-height: 18.2px;
-  padding: 0 8px 12px 8px;
+  padding: 0 9px 12px 8px;
   margin: 0;
+}
+.navbarMenu label {
+  padding: 0 9px 12px 8px;
 }
 .searchLabel {
   position: relative;
@@ -95,6 +108,11 @@ a {
   position: relative;
   left: 20px;
 }
+
+/* End Sidebar Header */
+
+/* Start Links List */
+
 .navList {
   display: flex;
   flex-direction: column;
@@ -166,6 +184,18 @@ a {
 .dropdownLinks:hover {
   background: var(--HighlightPurple);
 }
+.listIcon rect {
+  fill: var(--ActiveIconColor);
+}
+.ActiveIconColor rect {
+  fill: var(--IconColor);
+}
+
+/* Start Links List */
+/* End Right Sidebar */
+
+/* Media Queries */
+
 @media screen and (max-width: 768px) {
   .hamBars {
     display: flex;
@@ -173,4 +203,35 @@ a {
   .hide {
     display: none;
   }
+  .slideIn {
+    display: flex;
+    background: var(--White);
+    animation: slideIn 0.5s forwards;
+    -webkit-animation: slideIn 0.5s forwards;
+  }
+  .slideOut {
+    background: var(--White);
+    animation: slideOut 0.5s forwards;
+    -webkit-animation: slideOut 0.5s forwards;
+  }
+  
+  @keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0%); }
+  }
+  
+  @-webkit-keyframes slideIn {
+    0% { -webkit-transform: translateX(-100%); }
+    100% { -webkit-transform: translateX(0%); }
+  }
+  
+  @keyframes slideOut {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  @-webkit-keyframes slideOut {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+  } 
 }

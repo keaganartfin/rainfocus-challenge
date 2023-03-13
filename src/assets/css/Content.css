@@ -5,6 +5,8 @@ hr {
   border: none;
   margin: 0;
 }
+/* Start Content Wrapper */
+
 .content {
   width: 100%;
   height: 100%;
@@ -13,6 +15,10 @@ hr {
 .contentContainer {
   padding: 2.5rem 3rem 0 3rem;
 }
+
+/* End Content Wrapper */
+/* Start Content Header */
+
 .contentHeader {
   display: flex;
   flex-direction: column;
@@ -73,6 +79,11 @@ hr {
   font-size: 16px;
   line-height: 19.36px;
 }
+
+/* End Content Header */
+
+/* Start Content Attendee Information */
+
 .stepsContainer {
   padding: 1.5rem 3rem 0 3rem;
 }
@@ -87,6 +98,9 @@ hr {
   font-weight: 600;
   line-height: 1.5rem;
 }
+
+/* Step 1 Information */
+
 .stepHeader {
   font-size: 0.875rem;
   color: var(--Lightgray);
@@ -96,6 +110,7 @@ hr {
 }
 .stepsTitle {
   display: flex;
+  align-items: baseline;
   gap: 2px;
   font-size: 14px;
   line-height: 16.94px;
@@ -143,6 +158,11 @@ hr {
   padding: 8px;
   border-radius: 4px;
 }
+
+/* End Step 1 Information */
+
+/* Start Step 2/3 Information */
+
 .boxStructure {
   display: flex;
   flex-wrap: wrap;
@@ -191,9 +211,6 @@ hr {
   line-height: 16px;
   gap: 8px;
 }
-/* .stepBoxes span {
-  line-height: 15px;
-} */
 .inputBox {
   border: none;
   border-radius: 3px;
@@ -222,6 +239,16 @@ hr {
   border: none;
   color: var(--White);
 }
+.listIcon path {
+  fill: var(--ContentIconColor);
+}
+
+/* End Step 2/3 Information */
+
+/* End Content Attendee Information */
+
+/* Media Queries */
+
 @media screen and (max-width:1077px) {
   .boxStructure {
     justify-content: space-between;
@@ -240,9 +267,6 @@ hr {
   .addBoxes {
     width: 100%;
   }
-}
-@media screen and (max-width: 970px) {
-
 }
 @media screen and (max-width: 768px) {
   .content {
