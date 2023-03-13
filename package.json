@@ -1,6 +1,7 @@
 {
   "name": "rainfocus-challenge",
   "version": "0.1.0",
+  "homepage":"./",
   "private": true,
   "dependencies": {
     "@fontsource/inter": "^4.5.15",
