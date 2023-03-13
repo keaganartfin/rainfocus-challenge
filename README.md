@@ -1,6 +1,4 @@
-### Hello, ###
-### My name is Keagan Latarewicz. Thank you for taking the time to review my challenge site. ###
-
+***Hello, My name is Keagan Latarewicz. Thank you for taking the time to review my challenge site.***
 - - - -
 
 ## Installation: ##
@@ -13,7 +11,6 @@ Open up your system console or the IDE integrated console and navigate to the fo
 
 '**npm start**' and you should be up and running!
 
-- - - -
 
 ## Some features: ##
 
